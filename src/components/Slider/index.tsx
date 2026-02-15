@@ -7,7 +7,7 @@ import "@madzadev/image-slider/dist/index.css";
 
 
 
-export const ImageSlider = ({data})=>{
+export const ImageSlider = ({data}:{data:any})=>{
     return (
         <Slider
             imageList={data}
