@@ -48,12 +48,12 @@ export const Introduction = ()=>{
     return (
         <div ref={ref as any}  id={'#home'}>
             <div>
-                <h1 className="text-white tracking-[4px]  text-[110px]  leading-[100px] font-bold">SOFTWARE<br/>ENGINEER</h1>
-                <p className="text-[#998f8f] whitespace-pre-wrap text-[18px]">
+                <h1 className=" text-white  font-bold  tracking-[4px] text-[50px] leading-[60px] text-center md:text-[90px] md:leading-[100px] lg:text-[110px] lg:leading-[110px] lg:text-left">SOFTWARE<br/>ENGINEER</h1>
+                <p className="text-[#998f8f] whitespace-pre-wrap text-[14px] md:text-[16px] text-center lg:text-left lg:text-[18px] ">
                     {"Passionate about creating intuitive and engaging user\nexperiences. Specialize in transforming ideas into\nbeautifully crafted products."}
                 </p>
             </div>
-            <ul className="mt-[20px] flex gap-[40px]  list-none">
+            <ul className="mt-[20px] flex gap-[40px] justify-center  list-none lg:justify-normal">
                 {data.map((el,index)=>{
                     return (
                         <li key={index} className="flex flex-col">
@@ -63,7 +63,7 @@ export const Introduction = ()=>{
                     )
                 })}
             </ul>
-            <ul className={'grid grid-cols-[1fr_1.5fr] gap-[20px] mt-[20px]'}>
+            <ul className={'flex flex-col  gap-[20px] m-[20px_10px_0_10px] sm:grid grid-cols-[1fr_1.5fr] lg:m-[20px_0_0_0]'}>
                 {info.map((el,index)=>{
                     return (
                         <li key={index} className="relative  h-[240px] min-w-[200px] h-[250px] rounded-[16px]" style={{background:el.bg}}>

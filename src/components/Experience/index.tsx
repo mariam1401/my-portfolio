@@ -28,7 +28,7 @@ export const Experience = ()=>{
 
     return (
         <div ref={ref as any} className='flex flex-col gap-[60px]' id={'experience'}>
-            <h2 className={'text-white tracking-[4px]  text-[90px]  leading-[100px] font-bold'}>
+            <h2 className={'text-white  font-bold  tracking-[4px] text-[50px] leading-[60px] text-center md:text-[80px] md:leading-[80px] lg:text-[90px] lg:leading-[110px] lg:text-left'}>
                 5+ YEARS OF<br/>EXPERIENCE
             </h2>
             <ul className='flex flex-col gap-[30px]'>

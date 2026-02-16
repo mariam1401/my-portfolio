@@ -24,17 +24,17 @@ export const RecentProjects = ()=>{
 
     return (
         <div  ref={ref as any} className='flex flex-col gap-[60px]' id={'projects'}>
-            <h2 className='text-white tracking-[4px]  text-[90px]  leading-[100px] font-bold'>RECENT<br/>PROJECTS</h2>
+            <h2 className='text-white  font-bold  tracking-[4px] text-[50px] leading-[60px] text-center md:text-[80px] md:leading-[80px] lg:text-[90px] lg:leading-[110px] lg:text-start'>RECENT<br/>PROJECTS</h2>
             <div>
                 <ul className='flex flex-col gap-[30px]'>
                     {projects.map((el,index)=>{
                         return (
                             <li key={index} className={'animation-pulse'}>
                                 <Link href={`/projects/${el.link}`} className=' relative rounded-[16px] transition-all duration-300 ease-linear p-[20px_16px] flex gap-[20px] items-center cursor-pointer hover:bg-[rgba(255,255,255,0.1)]'>
-                                    <Image src={el.image} alt={el.title}  height={130} className='rounded-[16px]'/>
+                                    <Image src={el.image} alt={el.title}  height={130} className='rounded-[16px] w-auto h-[90px]'/>
                                     <div>
-                                        <h3 className={'text-white text-[20px]'}>{el.title}</h3>
-                                        <p className={'text-[#998f8f]'}>{el.desc}</p>
+                                        <h3 className={'text-white text-[16px] md:text-[20px]'}>{el.title}</h3>
+                                        <p className={'text-[#998f8f] text-[14px] md:text-[16px]'}>{el.desc}</p>
                                     </div>
                                     <Image
                                         src={ArrowIcon}

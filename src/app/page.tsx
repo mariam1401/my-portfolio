@@ -11,12 +11,12 @@ export default function Home() {
           <div className="relative z-10">
               <Header />
 
-              <div className="flex justify-center gap-[80px] mt-[80px] max-w-[1140px] m-auto">
-                  <div className="sticky top-[80px] self-start">
+              <div className="flex  flex-col justify-center gap-[80px] mt-[80px] max-w-[810px]  m-auto lg:flex-row lg:max-w-[1140px]">
+                  <div className=" relative top-[40px]  w-full self-start lg:sticky lg:top-[80px]  lg:m-0">
                       <ImageFrame />
                   </div>
 
-                  <div className="flex flex-col gap-[120px] w-min">
+                  <div className="flex flex-col gap-[120px] mt-10 w-full lg:w-min lg:mt-0">
                       <Introduction />
                       <RecentProjects />
                       <Experience />

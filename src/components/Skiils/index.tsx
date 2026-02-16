@@ -76,13 +76,13 @@ export const Skills = ()=>{
     });
     return (
         <div ref={ref as any} className='flex flex-col gap-[60px]' id={'skills'}>
-            <h2 className={'text-white tracking-[4px]  text-[90px]  leading-[100px] font-bold'}>
+            <h2 className={'text-white  font-bold  tracking-[4px] text-[50px] leading-[60px] text-center md:text-[80px] md:leading-[80px] lg:text-[90px] lg:leading-[110px] lg:text-left'}>
                 TECHNICAL SKILLS
             </h2>
-            <ul className='grid grid-cols-3  gap-[20px]'>
+            <ul className='grid grid-cols-2  gap-[20px] md:grid-cols-3'>
                 {experiences.map((el,index)=>{
                     return (
-                        <li key={index} className=' relative rounded-[16px] transition-all duration-300 ease-linear p-[20px_16px] flex flex-col gap-[20px]   hover:bg-[rgba(255,255,255,0.1)]'>
+                        <li key={index} className=' relative rounded-[16px] transition-all duration-300 ease-linear p-[20px_16px] flex flex-col gap-[20px] items-center md:items-start  hover:bg-[rgba(255,255,255,0.1)]'>
                             <Image src={el.image} alt={el.title}  height={50}/>
                             <h3 className={'text-white text-[20px]'}>{el.title}</h3>
                         </li>
