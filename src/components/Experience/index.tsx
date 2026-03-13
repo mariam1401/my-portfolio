@@ -5,17 +5,17 @@ import {useAnimateOnScroll} from "@/hooks/animateScroll";
 export const Experience = ()=>{
     const experiences = [
         {
-            title: 'SoftShark | Software Engineer',
-            date: '2021 - Present',
-            desc: 'Designed, developed, and maintained large-scale frontend applications using React.js and Next.js, focusing on performance, scalability, and clean architecture.'
-        },
-        {
-            title: 'AregAi | Frontend Developer',
-            date: '2025 - 2026',
+            title: 'AregAi | Software Engineer',
+            date: '2025 - Present',
             desc: 'Built responsive and user-friendly interfaces while collaborating closely with backend teams to integrate RESTful APIs and optimize data flow.'
         },
         {
-            title: 'Booka | Frontend Developer',
+            title: 'SoftShark | Software Engineer',
+            date: '2021 - 2025',
+            desc: 'Designed, developed, and maintained large-scale frontend applications using React.js and Next.js, focusing on performance, scalability, and clean architecture.'
+        },
+        {
+            title: 'Booka | Software Engineer',
             date: '2023 - 2024',
             desc: 'Developed key UI features for an event planning marketplace, improving user experience and ensuring cross-browser and cross-device compatibility.'
         }
