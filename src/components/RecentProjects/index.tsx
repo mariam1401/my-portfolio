@@ -2,7 +2,6 @@
 import AregAIImage from './assets/aregAi.png'
 import BookaImage from './assets/booka.png'
 import FocalImage from './assets/focal.png'
-import WebImage from './assets/10web.png'
 import ArrowIcon from './assets/arrow.svg'
 import Image from "next/image";
 import Link from "next/link";
@@ -13,8 +12,7 @@ export const RecentProjects = ()=>{
     const projects = [
         {image:AregAIImage,title:'AregAi',desc:'AI Monitoring for Solar Energy',link:'aregAi'},
         {image:BookaImage,title:'Booka',desc:'The Event Planning Marketplace',link:'booka'},
-        {image:FocalImage,title:'FocalPoints',desc:'AI Call Analysis & Agent Metrics',link:'focalpoints'},
-        {image:WebImage,title:'Wordpress Plugins',desc:"All WordPress Plugins, One Place",link:'wordpress-plugins'}
+        {image:FocalImage,title:'FocalPoints',desc:'AI Call Analysis & Agent Metrics',link:'focalpoints'}
     ]
     const ref = useAnimateOnScroll({
         animation: "animate__fadeIn",

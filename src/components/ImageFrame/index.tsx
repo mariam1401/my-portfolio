@@ -11,7 +11,7 @@ export const ImageFrame = ()=>{
         {icon:GithubIcon,link:'https://github.com/mariam1401'}
     ]
     return (
-        <div className="relative  h-max m-[0_20px] bg-white pt-[30px] pr-[20px] pl-[20px] pb-[30px]  flex-col  rounded-[16px] lg:w-[334px] ">
+        <div className="float-anim relative h-max m-[0_20px] bg-white pt-[30px] pr-[20px] pl-[20px] pb-[30px] flex-col rounded-[16px] lg:w-[334px]">
             <Image src={LineIcon} alt={'Line'} width={194} height={100} className='absolute top-0 left-0'/>
             <Image src={MeImage} alt={'Mariam'} width={240} height={284} className="m-auto rounded-[16px]"/>
             <div className="relative mt-[24px]">

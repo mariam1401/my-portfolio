@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Portfolio | Mariam Karapetyan",
         description: "Frontend Developer Portfolio - Mariam Karapetyan",
-        url: "https://karapetyan-mariam-portfolio.vercel.app",
+        url: "https://mariam-karapetyan.vercel.app/",
         siteName: "Portfolio | Mariam Karapetyan",
         images: [
             {
-                url: "/preview.png",
+                url: "https://mariam-karapetyan.vercel.app/preview.png",
                 width: 1200,
                 height: 630,
-                alt: "Preview Image",
+                alt: "Mariam Karapetyan - Frontend Developer Portfolio",
             },
         ],
         type: "website",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
     twitter: {
         card: "summary_large_image",
-        images: ["/preview.png"],
+        images: ["https://mariam-karapetyan.vercel.app/preview.png"],
     },
 };
 

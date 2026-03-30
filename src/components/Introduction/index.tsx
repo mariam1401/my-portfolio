@@ -57,7 +57,7 @@ export const Introduction = ()=>{
                 {data.map((el,index)=>{
                     return (
                         <li key={index} className="flex flex-col">
-                            <span className="text-white whitespace-pre-wrap text-[60px] font-bold"> +{el.value}</span>
+                            <span className="text-white whitespace-pre-wrap text-[60px] font-bold"> {el.value}+</span>
                             <span className="text-[#998f8f] whitespace-pre-wrap">{el.title}</span>
                         </li>
                     )

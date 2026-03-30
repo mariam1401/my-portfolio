@@ -12,6 +12,9 @@ import MaterialImage from './assets/material.png'
 import TailwindImage from './assets/tailwind.png'
 import SvelteImage from './assets/svelte.png'
 import GitImage from './assets/github.svg'
+import FigmaImage from './assets/figma.svg'
+import GraphQLImage from './assets/graphql.svg'
+import ClaudeImage from './assets/anthropic.svg'
 import Image from "next/image";
 import {useAnimateOnScroll} from "@/hooks/animateScroll";
 
@@ -66,7 +69,18 @@ export const Skills = ()=>{
             image:GitImage,
             title: 'Git/Github',
         },
-
+        {
+            image:FigmaImage,
+            title: 'Figma',
+        },
+        {
+            image:GraphQLImage,
+            title: 'GraphQL',
+        },
+        {
+            image:ClaudeImage,
+            title: 'Claude AI',
+        },
     ]
 
     const ref = useAnimateOnScroll({
@@ -82,7 +96,7 @@ export const Skills = ()=>{
             <ul className='grid grid-cols-2  gap-[20px] md:grid-cols-3'>
                 {experiences.map((el,index)=>{
                     return (
-                        <li key={index} className=' relative rounded-[16px] transition-all duration-300 ease-linear p-[20px_16px] flex flex-col gap-[20px] items-center md:items-start  hover:bg-[rgba(255,255,255,0.1)]'>
+                        <li key={index} className='relative rounded-[16px] transition-all duration-300 ease-linear p-[20px_16px] flex flex-col gap-[20px] items-center md:items-start hover:bg-[rgba(255,255,255,0.1)]'>
                             <Image src={el.image} alt={el.title}  height={50}/>
                             <h3 className={'text-white text-[20px]'}>{el.title}</h3>
                         </li>

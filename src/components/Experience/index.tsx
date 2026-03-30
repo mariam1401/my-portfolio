@@ -1,5 +1,5 @@
 'use client'
-import {useAnimateOnScroll} from "@/hooks/animateScroll";
+import {useStaggerOnScroll} from "@/hooks/staggerScroll";
 
 
 export const Experience = ()=>{
@@ -20,11 +20,7 @@ export const Experience = ()=>{
             desc: 'Developed key UI features for an event planning marketplace, improving user experience and ensuring cross-browser and cross-device compatibility.'
         }
     ]
-    const ref = useAnimateOnScroll({
-        animation: "animate__fadeIn",
-        once: true,
-        speedClass: "animate__slow",
-    });
+    const ref = useStaggerOnScroll({ delayStep: 150 });
 
     return (
         <div ref={ref as any} className='flex flex-col gap-[60px]' id={'experience'}>
@@ -34,7 +30,7 @@ export const Experience = ()=>{
             <ul className='flex flex-col gap-[30px]'>
                 {experiences.map((el,index)=>{
                     return (
-                        <li key={index} className=' relative rounded-[16px] transition-all duration-300 ease-linear p-[20px_16px] flex flex-col gap-[20px]  cursor-pointer hover:bg-[rgba(255,255,255,0.1)]'>
+                        <li key={index} className='experience-card relative rounded-[16px] transition-all duration-300 ease-linear p-[20px_16px] flex flex-col gap-[20px] cursor-pointer hover:bg-[rgba(255,255,255,0.1)]'>
                             <h3 className={'text-white text-[20px]'}>{el.title}</h3>
                             <p className={'text-[#998f8f]'}>{el.desc}</p>
                             <p className={'text-[#998f8f]'}>{el.date}</p>
