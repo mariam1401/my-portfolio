@@ -7,17 +7,17 @@ export const Experience = ()=>{
         {
             title: 'AregAi | Software Engineer',
             date: '2025 - Present',
-            desc: 'Built responsive and user-friendly interfaces while collaborating closely with backend teams to integrate RESTful APIs and optimize data flow.'
+            desc: 'Building AI-powered solar monitoring interfaces with real-time data visualization. Integrating Claude AI for intelligent anomaly detection and automated reporting workflows.'
         },
         {
             title: 'SoftShark | Software Engineer',
             date: '2021 - 2025',
-            desc: 'Designed, developed, and maintained large-scale frontend applications using React.js and Next.js, focusing on performance, scalability, and clean architecture.'
+            desc: 'Led frontend development of large-scale applications using React.js and Next.js. Built Claude AI-powered features including intelligent search, content generation, and conversational interfaces using the Anthropic API.'
         },
         {
             title: 'Booka | Software Engineer',
             date: '2023 - 2024',
-            desc: 'Developed key UI features for an event planning marketplace, improving user experience and ensuring cross-browser and cross-device compatibility.'
+            desc: 'Developed key UI features for an event planning marketplace with real-time messaging, payment integration, and AI-assisted vendor matching powered by Claude.'
         }
     ]
     const ref = useStaggerOnScroll({ delayStep: 150 });

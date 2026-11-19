@@ -1,11 +1,11 @@
 
 
-
 export const ProjectsData = [
     {
         id:'aregAi',
         title:'AREG AI',
         short_description:"AI Monitoring for Solar Energy",
+        tags: ['React', 'Redux', 'D3.js', 'Claude AI', 'Firestore'],
         description:'<section class="project" id="areg-ai">\n' +
             '  <header class="project__header">\n' +
             '    <div class="project__links">\n' +
@@ -26,6 +26,7 @@ export const ProjectsData = [
             '        <li>Digital twin UI for plant/asset representation and interaction</li>\n' +
             '        <li>Real-time telemetry and status updates via Firestore streams</li>\n' +
             '        <li>Operational dashboards with custom D3.js charts</li>\n' +
+            '        <li>Claude AI-powered anomaly detection and automated reporting</li>\n' +
             '        <li>Map-to-panel interactions (select assets, drill-down, filters, layers)</li>\n' +
             '      </ul>\n' +
             '    </article>\n' +
@@ -42,6 +43,10 @@ export const ProjectsData = [
             '          coordinate map state, filters, asset selection, and live telemetry.\n' +
             '        </li>\n' +
             '        <li>\n' +
+            '          Integrated Claude AI via Anthropic API for intelligent anomaly reports and natural-language\n' +
+            '          summaries of plant performance data.\n' +
+            '        </li>\n' +
+            '        <li>\n' +
             '          Integrated Firestore real-time listeners to keep UI state synchronized with backend updates\n' +
             '          with low latency and consistent UX.\n' +
             '        </li>\n' +
@@ -49,18 +54,15 @@ export const ProjectsData = [
             '          Developed reusable D3.js visualizations (time-series, KPIs, trends) that update dynamically\n' +
             '          based on live data and user controls.\n' +
             '        </li>\n' +
-            '        <li>\n' +
-            '          Focused on performance and usability: memoized selectors, optimized renders, and built\n' +
-            '          responsive layouts for dashboard-heavy screens.\n' +
-            '        </li>\n' +
             '      </ul>\n' +
             '    </article>\n' +
             '\n' +
             '    <article class="project__card project__card--full">\n' +
             '      <h3 class="project__cardTitle">Tech stack</h3>\n' +
-            '      <ul class="project__list">\n' +
+            '      <ul class="project__tags">\n' +
             '        <li class="tag">React</li>\n' +
             '        <li class="tag">Redux Toolkit</li>\n' +
+            '        <li class="tag">Claude AI / Anthropic API</li>\n' +
             '        <li class="tag">Firestore (Realtime)</li>\n' +
             '        <li class="tag">D3.js</li>\n' +
             '        <li class="tag">Interactive Maps / Digital Twin</li>\n' +
@@ -80,7 +82,8 @@ export const ProjectsData = [
         id:'focalpoints',
         title:'FocalPoints',
         short_description:"AI Call Analysis & Agent Metrics",
-        description:'<section class="project" id="areg-ai">\n' +
+        tags: ['Svelte', 'AWS', 'Firestore', 'Tailwind'],
+        description:'<section class="project" id="focalpoints">\n' +
             '  <header class="project__header">\n' +
             '  </header>\n' +
             '\n' +
@@ -105,6 +108,9 @@ export const ProjectsData = [
             '          Designed and implemented scalable UI architecture for complex real-time workflows.\n' +
             '        </li>\n' +
             '        <li>\n' +
+            '          Built real-time call quality evaluation and performance scoring dashboards.\n' +
+            '        </li>\n' +
+            '        <li>\n' +
             '          Built real-time dashboards using Firestore listeners and reactive state handling.\n' +
             '        </li>\n' +
             '        <li>\n' +
@@ -113,16 +119,12 @@ export const ProjectsData = [
             '        <li>\n' +
             '          Ensured responsive and modern UI design using Tailwind.\n' +
             '        </li>\n' +
-            '        <li>\n' +
-            '          Focused on performance and usability: memoized selectors, optimized renders, and built\n' +
-            '          responsive layouts for dashboard-heavy screens.\n' +
-            '        </li>\n' +
             '      </ul>\n' +
             '    </article>\n' +
             '\n' +
             '    <article class="project__card project__card--full">\n' +
             '      <h3 class="project__cardTitle">Tech stack</h3>\n' +
-            '      <ul class="project__list">\n' +
+            '      <ul class="project__tags">\n' +
             '        <li class="tag">Svelte</li>\n' +
             '        <li class="tag">Amazon Connect</li>\n' +
             '        <li class="tag">Firestore (Realtime)</li>\n' +
@@ -143,7 +145,8 @@ export const ProjectsData = [
         id:'booka',
         title:'Booka',
         short_description:"The Event Planning Marketplace",
-        description:'<section class="project" id="areg-ai">\n' +
+        tags: ['Next.js', 'TypeScript', 'Stripe', 'Firestore', 'Material UI'],
+        description:'<section class="project" id="booka">\n' +
             '  <header class="project__header">\n' +
             '    <div class="project__links">\n' +
             '      <a class="project__link" href="https://www.booka.ie/" target="_blank" rel="noopener noreferrer">Website</a>\n' +
@@ -161,7 +164,6 @@ export const ProjectsData = [
             '      <ul class="project__list">\n' +
             '        <li>Booking management with availability control</li>\n' +
             '        <li>Google Calendar synchronization</li>\n' +
-            '        <li>Google Calendar synchronization</li>\n' +
             '        <li>Real-time messaging between vendors and bookers</li>\n' +
             '        <li>Role-based dashboards (Vendor / Booker)</li>\n' +
             '      </ul>\n' +
@@ -171,7 +173,7 @@ export const ProjectsData = [
             '      <h3 class="project__cardTitle">My contributions</h3>\n' +
             '      <ul class="project__list">\n' +
             '        <li>\n' +
-            '         Architected and implemented the booking workflow from vendor availability to payment confirmation./n' +
+            '         Architected and implemented the booking workflow from vendor availability to payment confirmation.\n' +
             '        </li>\n' +
             '        <li>\n' +
             '          Integrated Stripe payments and handled secure transaction lifecycle.\n' +
@@ -190,11 +192,11 @@ export const ProjectsData = [
             '\n' +
             '    <article class="project__card project__card--full">\n' +
             '      <h3 class="project__cardTitle">Tech stack</h3>\n' +
-            '      <ul class="project__list">\n' +
+            '      <ul class="project__tags">\n' +
             '        <li class="tag">Next.js</li>\n' +
             '        <li class="tag">TypeScript</li>\n' +
             '        <li class="tag">Firestore (Realtime)</li>\n' +
-            '        <li class="tag">Google Calendar API integration</li>\n' +
+            '        <li class="tag">Google Calendar API</li>\n' +
             '        <li class="tag">Stripe</li>\n' +
             '        <li class="tag">Material UI</li>\n' +
             '      </ul>\n' +
@@ -211,7 +213,8 @@ export const ProjectsData = [
         id:'wordpress-plugins',
         title:'WordPress Plugins',
         short_description:"All WordPress Plugins, One Place",
-        description:'<section class="project" id="areg-ai">\n' +
+        tags: ['Next.js', 'TypeScript', 'Tailwind', 'Material UI'],
+        description:'<section class="project" id="wordpress">\n' +
             '  <header class="project__header">\n' +
             '  </header>\n' +
             '\n' +
@@ -254,7 +257,7 @@ export const ProjectsData = [
             '\n' +
             '    <article class="project__card project__card--full">\n' +
             '      <h3 class="project__cardTitle">Tech stack</h3>\n' +
-            '      <ul class="project__list">\n' +
+            '      <ul class="project__tags">\n' +
             '        <li class="tag">Next.js</li>\n' +
             '        <li class="tag">TypeScript</li>\n' +
             '        <li class="tag">Tailwind</li>\n' +
